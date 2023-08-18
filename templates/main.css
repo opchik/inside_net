@@ -1,0 +1,13 @@
+.center-alignment-item{
+        position: absolute; 
+        top: 50%; 
+        transform: translate(0, -50%)
+      }
+
+.block-black{
+        background-color: #000000;
+}
+
+.my-base-color{
+        background-color: #808080;
+}

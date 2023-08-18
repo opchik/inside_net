@@ -1444,3 +1444,37 @@ INFO:     185.36.81.33:50746 - "GET / HTTP/1.1" 200 OK
 WARNING:  Unsupported upgrade request.
 WARNING:  No supported WebSocket library detected. Please use "pip install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
 WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/bin/uvicorn", line 6, in <module>
+    from pkg_resources import load_entry_point
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3254, in <module>
+    def _initialize_master_working_set():
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3237, in _call_aside
+    f(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3266, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 584, in _build_master
+    ws.require(__requires__)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 901, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 787, in resolve
+    raise DistributionNotFound(req, requirers)
+pkg_resources.DistributionNotFound: The 'uvloop>=0.14.0' distribution was not found and is required by uvicorn
+INFO:     Started server process [491126]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [491152]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [491595]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO:     94.25.169.60:40146 - "GET / HTTP/1.1" 200 OK
+INFO:     94.25.169.60:31176 - "GET / HTTP/1.1" 200 OK

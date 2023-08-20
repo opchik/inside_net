@@ -4,14 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="templates/main.css">
+    <link rel="stylesheet" type="text/css" href="../templates/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Внутри сети</title>
   </head>
   <body>
     <head>
       <nav class="navbar navbar-expand-lg navbar-dark block-black">
-        <div class="container-fluid">
+        <div class="container-fluid my-2">
           <a class="navbar-brand mx-5">Внутри сети</a>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -25,9 +25,15 @@
                 <a class="nav-link active" aria-current="page" href="#presentation">Презентация</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">О нас</a>
+                <a class="nav-link active" aria-current="page" href="#implementation">Применение</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#aboutus">О нас</a>
               </li>
             </ul>
+          </div>
+          <div class="d-flex align-item-end mx-5">
+              <a class="btn btn-primary" role="button" href="templates/pages/nnetworks.html">Найти нейросеть</a>
           </div>
         </div>
       </nav>
@@ -37,20 +43,19 @@
         <div class="row row-cols-1 row-cols-lg-2 my-5 mx-5">
           <div class="col">
               <h1 class="my-5">Создавайте будущее с ИИ</h1>
-              <h4>
-                Автоматизация бизнес-процессов на основе нейросетевых технологий
-              </h4>
+                <h4>Автоматизация бизнес-процессов на основе нейросетевых технологий</h4>
               <div class="my-5">
-                <a class="btn btn-dark shadow" href="#contact">
+                <a class="btn btn-dark shadow" href="#presentation">
                   <h4>Записаться на презентацию</h4>
                 </a>
               </div>
           </div>
           <div class="col">
             <img 
-              src="/templates/images/first.jpg"
+              src="/templates/images/start_image.png"
               width="100%"
               class="image-fluid"
+              style="max-height: 550px;" 
             >
           </div>
         </div>
@@ -69,7 +74,7 @@
         <div class="row text-center" id="service">
             <h2 class="my-5">Наши услуги</h2>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 my-5">
           <div class="col my-3">
             <div class="card shadow text-start mx-5 h-100">
               <div class="card-header" style="height: 70px; position: relative;"><h5 class="card-title center-alignment-item">Консультационные услуги</h5></div>
@@ -135,6 +140,7 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 bg-dark p-5">     
           <div class="col my-3">
             <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/dalle_1.png" class="card-img-top">
               <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Индивидуальный подход</h5></div>
               <div class="card-body">
                 <p class="card-text">Мы применяем индивидуальный подход к каждому. Тщательно анализируем потребности и цели клиента, чтобы разработать наиболее подходящее решение, которое удовлетворит его потребности.</p>
@@ -143,6 +149,7 @@
           </div>
           <div class="col my-3">
             <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/dalle_2.png" class="card-img-top">
               <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Эффективность</h5></div>
               <div class="card-body">
                 <p class="card-text">Наше внедрение нейросетей помогает оптимизировать и автоматизировать бизнес-процессы, что приводит к повышению продуктивности и эффективности работы.</p>
@@ -151,6 +158,7 @@
           </div>
           <div class="col my-3">
             <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/dalle_4.png" class="card-img-top">
               <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Повышение качества</h5></div>
               <div class="card-body">
                 <p class="card-text">Внедрение нейросетей позволяет значительно улучшить как качество работы, так и результаты. Мы поможем вам повысить качество выпускаемой продукции или услуг, а также улучшить качество обслуживания клиентов.</p>
@@ -159,6 +167,7 @@
           </div>
           <div class="col my-3">
             <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/dalle_6.png" class="card-img-top">
               <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Снижение затрат</h5></div>
               <div class="card-body">
                 <p class="card-text">Нейросети могут помочь улучшить процессы, оптимизировать расходы и снизить операционные затраты. Мы поможем вам найти эффективные решения, которые помогут сэкономить ваш бюджет.</p>
@@ -167,6 +176,7 @@
           </div>
           <div class="col my-3">
             <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/dalle_5.png" class="card-img-top">
               <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Быстрая реакция</h5></div>
               <div class="card-body">
                 <p class="card-text">Нейросети позволяют осуществлять автоматический мониторинг и быструю реакцию на изменения в бизнес-процессах. Мы поможем вам оперативно реагировать на изменения на рынке и быстро адаптироваться к новым условиям.</p>
@@ -175,6 +185,7 @@
           </div>
           <div class="col my-3">
             <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/dalle_3.png" class="card-img-top">
               <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Аналитика</h5></div>
               <div class="card-body">
                 <p class="card-text">Наша технология позволяет проводить анализ данных и делать прогнозы будущих тенденций, что поможет вам принимать обоснованные решения на основе точных и достоверных данных.</p>
@@ -182,22 +193,115 @@
             </div>
           </div> 
         </div>
-        <div class="row my-5" id="contact">
+        <div class="row my-5" id="presentation">
           <div class="contact-form">
             <div class="container">
               <form>
                 <div class="row row-cols-1 row-cols-md-2">
                   <div class="col my-3">
-                      <h1 style="margin-bottom: 40px;">О нас</h1>
-                      Основная цель - помочь организациям автоматизировать и оптимизировать свои бизнес-процессы с использованием нейросетевых технологий и алгоритмов машинного обучения.
-                      <br><br>
-                      Наш подход основан на тщательном анализе бизнес-процессов каждого клиента и разработке решения, которое наилучшим образом соответствует их потребностям. Мы предлагаем широкий спектр услуг для внедрения нейросетей, начиная от консультаций и разработки моделей до их интеграции в уже существующие системы.
-                      <br><br>
-                      Наша компания также предлагает поддержку и обслуживание после внедрения решений, чтобы гарантировать непрерывную работу системы и ее оптимальную производительность. В результате сотрудничества с нашей компанией, организации получают значительные преимущества, включая повышение эффективности, улучшение качества и точности принимаемых решений, увеличение скорости обработки данных и сокращение затрат.
+                    <iframe class="border-top border-1 border-dark shadow" src="https://docs.google.com/forms/d/e/1FAIpQLScZl5V0K_bp72adlA1I1fNTCEYdAhiGk-7WY0Xxw71kkOeq6w/viewform?embedded=true" width="100%" height="100%" style="min-height: 500px;" frameborder="2" marginheight="0" marginwidth="0">Загрузка…</iframe>
                   </div>
                   <div class="col my-3">
-                    <iframe  id="presentation" src="https://docs.google.com/forms/d/e/1FAIpQLScZl5V0K_bp72adlA1I1fNTCEYdAhiGk-7WY0Xxw71kkOeq6w/viewform?embedded=true" width="100%" height="100%" style="box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3) !important; min-height: 500px;" frameborder="2" marginheight="0" marginwidth="0">Загрузка…</iframe>
+                      <img 
+                        src="/templates/images/presentation.png"
+                        width="100%"
+                        class="image-fluid rounded-circle border border-1 border-dark mx-3"
+                      >
                   </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center bg-dark text-white" id="implementation"  style="position: relative;">
+            <h2 class="my-5">Применение</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 bg-dark p-5">     
+          <div class="col my-3">
+            <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/hr.png" class="card-img-top">
+              <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">HR (управление персоналом) </h5></div>
+              <div class="card-body">
+                <p class="card-text">ИИ может помочь с автоматизацией процессов подбора персонала, анализа резюме кандидатов, проведения интервью, контроля за эффективностью работы сотрудников и решения других задач, связанных с управлением персоналом.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/marketing.png" class="card-img-top">
+              <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Маркетинг</h5></div>
+              <div class="card-body">
+                <p class="card-text">ИИ может использоваться для проведения анализа рынка и потребителей, предсказания поведения покупателей, подготовки персонализированных рекламных кампаний, автоматического отслеживания результата маркетинговых мероприятий и других задач, связанных с маркетингом и продвижением продуктов или услуг.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/service.png" class="card-img-top">
+              <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Клиентское обслуживание</h5></div>
+              <div class="card-body">
+                <p class="card-text">ИИ может быть использован для автоматизации обработки запросов от клиентов, предоставления информации о продуктах или услугах, решения повседневных проблем клиентов, предоставления онлайн-поддержки и т. д. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/img_4.png" class="card-img-top">
+              <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Логистика</h5></div>
+              <div class="card-body">
+                <p class="card-text">ИИ может помочь в оптимизации процессов управления складскими запасами, планировании маршрутов доставки, обработке и отслеживании грузов, улучшении эффективности логистической сети и других задачах, связанных с логистикой.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <div class="card shadow mx-3 h-100">
+              <img src="/templates/images/img_5.png" class="card-img-top">
+              <div class="card-header" style="height: 50px; position: relative;"><h5 class="card-title center-alignment-item">Финансы</h5></div>
+              <div class="card-body">
+                <p class="card-text">ИИ может быть использован для автоматизации финансовых процессов, анализа бухгалтерской отчетности, прогнозирования финансовых показателей, выявления мошенничества и других задач, связанных с финансами и учетом. </p>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row my-5" id="aboutus">
+          <div class="contact-form">
+            <div class="container">
+              <form>
+                <div class="row my-5">
+                  <h1 style="margin-bottom: 40px;">О нас</h1>
+                  <p>
+                    Основная цель - помочь организациям автоматизировать и оптимизировать свои бизнес-процессы с использованием нейросетевых технологий и алгоритмов машинного обучения.
+                  </p>
+                  <p>
+                    Наш подход основан на тщательном анализе бизнес-процессов каждого клиента и разработке решения, которое наилучшим образом соответствует их потребностям. Мы предлагаем широкий спектр услуг для внедрения нейросетей, начиная от консультаций и разработки моделей до их интеграции в уже существующие системы.
+                  </p>
+                  <p>
+                    Наша компания также предлагает поддержку и обслуживание после внедрения решений, чтобы гарантировать непрерывную работу системы и ее оптимальную производительность. В результате сотрудничества с нашей компанией, организации получают значительные преимущества, включая повышение эффективности, улучшение качества и точности принимаемых решений, увеличение скорости обработки данных и сокращение затрат.
+                  </p>
+                </div>
+                <div class="row my-5">
+                  <div class="col-12 col-md-8">
+                    <h1 style="margin-bottom: 40px; margin-top: 100px;">Подберите нейросеть для ваших задач</h1>
+                    <p>
+                      Используя полученные данные и задачи, наш инструмент проводит сравнительный анализ различных типов нейросетей и предлагает наиболее подходящий вариант. Это позволяет вам максимально оптимизировать эффективность нейросети в соответствии с вашими бизнес-потребностями.
+                    </p>
+                    <p>
+                      <div class="my-5">
+                        <a class="btn btn-dark shadow" href="/templates/pages/nnetworks.html">
+                          <h4>Подобрать нейросеть</h4>
+                        </a>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img 
+                      src="/templates/images/aboutus.png"
+                      width="100%"
+                      class="image-fluid rounded-circle border border-1 border-dark my-5"
+                      style="max-height: 380px; max-width: 380px;" 
+                    >
+                  </div>  
+                </div>
               </form>
             </div>
           </div>
@@ -219,8 +323,9 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><h5>Внутри сети</h5></a></li>
             <li class="nav-item mb-2"><a href="#service" class="nav-link p-0 text-white"><h6>Услуги</h6></a></li>
             <li class="nav-item mb-2"><a href="#advantage" class="nav-link p-0 text-white"><h6>Преимущества</h6></a></li>
-            <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-white"><h6>Презентация</h6></a></li>
-            <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-white"><h6>О нас</h6></a></li>
+            <li class="nav-item mb-2"><a href="#presentation" class="nav-link p-0 text-white"><h6>Презентация</h6></a></li>
+            <li class="nav-item mb-2"><a href="#implementation" class="nav-link p-0 text-white"><h6>Применение</h6></a></li>
+            <li class="nav-item mb-2"><a href="#aboutus" class="nav-link p-0 text-white"><h6>О нас</h6></a></li>
           </ul>
         </div>
         <div class="col my-3">

@@ -1,4 +1,4 @@
-#!/root/root/inside_net/venv/bin/python3
+#!/home/nick/inside_net/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
